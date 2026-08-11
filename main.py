@@ -18,6 +18,8 @@ allowed_origins = [
     if origin.strip()
 ]
 
+print(allowed_origins)
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     create_db_and_tables()

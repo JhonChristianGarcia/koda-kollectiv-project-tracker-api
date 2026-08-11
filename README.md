@@ -2,6 +2,8 @@
 
 Backend for the Koda Kollectiv project tracker. FastAPI + SQLite, with basic OAuth2 login so the frontend has something to auth against.
 
+Deployed at https://koda-kollectiv-project-tracker.fastapicloud.dev/ (docs at `/docs`).
+
 ## Stack
 
 - FastAPI
@@ -61,7 +63,3 @@ Tokens expire after `ACCESS_TOKEN_EXPIRE_MINUTES` (in `auth/security.py`). No re
 
 All of these need a valid token.
 
-## Stuff to know
-
-- sqlite path is relative, so it depends on where you run the app from - run from repo root or you'll end up with two db files
-- registration is open right now, anyone can hit `/auth/register` - fine for now but worth locking down before this goes anywhere real
